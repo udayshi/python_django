@@ -30,6 +30,7 @@ COPY manifest/config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY app /app
 RUN mkdir -p /run/nginx/
 WORKDIR /app
+RUN pip3 install django django-admin-tools
 RUN pip3 install -r requirements.txt
 EXPOSE 80 443
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]

@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t  udaysh/python .
+docker build -t  udaysh/python-django .

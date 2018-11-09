@@ -1,8 +1,8 @@
 container:
     #build: .
-    image: udaysh/python
+    image: udaysh/python-django
     labels:
-        - "com.lowecloud.proxy=python.docker"
+        - "com.lowecloud.proxy=python-django.docker"
     volumes:
         - "./manifest/config/nginx.conf:/etc/nginx/nginx.conf:ro"
         - "./manifest/config/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf:ro"

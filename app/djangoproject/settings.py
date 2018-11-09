@@ -25,7 +25,7 @@ SECRET_KEY = '9k@!v6aexz*izdulul4g99s63ix)@d8+t0b3ud-6eu-!#xgxk)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['python-django.docker']
 
 
 # Application definition
