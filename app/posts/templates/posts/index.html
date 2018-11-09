@@ -1,0 +1,20 @@
+{% extends "posts/layout.html" %}
+{% block content %}
+    <h2>{{title}}</h2>
+
+You Know
+<ul>
+    {% for know in knows %}
+    <li>{{know}}</li>
+    {% endfor %}
+
+
+
+</ul>
+<h2>Db Loops</h2>
+<ul>
+    {% for row in posts %}
+    <li><a href="/posts/details/{{row.id}}">{{row.title}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
